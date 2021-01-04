@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GE-Dinar-One-Medium.otf">
+            <string>GEDinarOne-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoursquareCategoryCollectionViewCell" customModule="_alsari3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIO-Tk-h8C">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5s-bS-iIS">
+                                <rect key="frame" x="8" y="27" width="44" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qnH-Tc-ipZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GEDinarOne-Medium" family="GE Dinar One" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P5s-bS-iIS" firstAttribute="centerX" secondItem="TIO-Tk-h8C" secondAttribute="centerX" id="0K1-Vt-Lqf"/>
+                            <constraint firstItem="P5s-bS-iIS" firstAttribute="centerY" secondItem="TIO-Tk-h8C" secondAttribute="centerY" id="WYZ-H1-z53"/>
+                            <constraint firstItem="P5s-bS-iIS" firstAttribute="leading" secondItem="TIO-Tk-h8C" secondAttribute="leading" constant="8" id="o4a-FG-0b0"/>
+                            <constraint firstAttribute="trailing" secondItem="P5s-bS-iIS" secondAttribute="trailing" constant="8" id="y0w-lR-cei"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TIO-Tk-h8C" secondAttribute="trailing" id="ZfP-JP-P6b"/>
+                <constraint firstItem="TIO-Tk-h8C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gcU-b3-Vbe"/>
+                <constraint firstItem="TIO-Tk-h8C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oU1-2C-XcQ"/>
+                <constraint firstAttribute="bottom" secondItem="TIO-Tk-h8C" secondAttribute="bottom" id="usk-DX-b6e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="235" height="268"/>
+            <connections>
+                <outlet property="nameLabel" destination="P5s-bS-iIS" id="HmW-zz-gcC"/>
+            </connections>
+            <point key="canvasLocation" x="269.56521739130437" y="176.78571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

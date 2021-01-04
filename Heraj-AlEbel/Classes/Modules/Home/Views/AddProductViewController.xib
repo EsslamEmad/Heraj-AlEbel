@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bahij_TheSansArabic-Plain.ttf">
+            <string>BahijTheSansArabic-Plain</string>
+        </array>
+        <array key="Bahij_TheSansArabic-SemiBold.ttf">
+            <string>BahijTheSansArabicSemiBold</string>
+        </array>
+        <array key="Bahij_TheSansArabic-SemiLight.ttf">
+            <string>BahijTheSansArabic-SemiLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProductViewController" customModule="Heraj_AlEbel" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="8lc-7b-Xeg" id="btY-p2-A5d"/>
+                <outlet property="categoryTextField" destination="r4Z-uk-jMz" id="1LL-br-yDV"/>
+                <outlet property="cityTextField" destination="9vl-aC-Xeh" id="URr-jw-22Y"/>
+                <outlet property="detailsTextView" destination="zcy-L2-Ccb" id="rze-qN-Xlz"/>
+                <outlet property="photosCollectionView" destination="45b-Bi-ZoT" id="VYz-u8-LRg"/>
+                <outlet property="priceTextField" destination="1f9-kQ-W0N" id="dmm-7T-J09"/>
+                <outlet property="showPhoneSwitch" destination="bfN-BT-c2U" id="ntm-Kr-pWt"/>
+                <outlet property="subCategoryTextField" destination="8Jy-ut-8cy" id="9wf-bS-G78"/>
+                <outlet property="titleTextField" destination="ZGb-a7-Q7Y" id="8fA-8d-Cay"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cfJ-vK-H54"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIScrollView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mq1-Ke-pIc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URv-K4-t9i" customClass="DashedBorderdRoundedCornerView" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="24" y="20" width="327" height="80"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إضغط هنا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAD-pK-5kE">
+                                    <rect key="frame" x="133.5" y="16" width="60" height="24"/>
+                                    <fontDescription key="fontDescription" name="BahijTheSansArabicSemiBold" family="Bahij TheSansArabic" pointSize="15"/>
+                                    <color key="textColor" red="0.83137254900000002" green="0.66274509800000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لرفع صورة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mza-Mv-d0L">
+                                    <rect key="frame" x="137" y="40" width="53" height="19"/>
+                                    <fontDescription key="fontDescription" name="BahijTheSansArabic-Plain" family="Bahij TheSansArabic" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="rAD-pK-5kE" firstAttribute="top" secondItem="URv-K4-t9i" secondAttribute="top" constant="16" id="BIO-fY-9jt"/>
+                                <constraint firstAttribute="height" constant="80" id="Fmd-RE-UWq"/>
+                                <constraint firstItem="Mza-Mv-d0L" firstAttribute="centerX" secondItem="URv-K4-t9i" secondAttribute="centerX" id="cY4-b7-wix"/>
+                                <constraint firstItem="Mza-Mv-d0L" firstAttribute="top" secondItem="rAD-pK-5kE" secondAttribute="bottom" id="ol1-JZ-Wvm"/>
+                                <constraint firstItem="rAD-pK-5kE" firstAttribute="centerX" secondItem="URv-K4-t9i" secondAttribute="centerX" id="qEX-YX-zYG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dashSize">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="I8B-2b-PRF" appends="YES" id="VLG-d8-Ov8"/>
+                            </connections>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="45b-Bi-ZoT">
+                            <rect key="frame" x="20" y="108" width="331" height="55"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="UIm-lj-az3"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D34-xR-dZL">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="القسم الرئيسي" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4Z-uk-jMz" customClass="BorderdRoundedCornerTextField" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="20" y="171" width="331" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="d3c-cU-nd3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="group_5"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="القسم الفرعي" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Jy-ut-8cy" customClass="BorderdRoundedCornerTextField" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="20" y="218" width="331" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="kVq-u5-NFF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="group_5"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="عنوان الإعلان" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGb-a7-Q7Y" customClass="BorderdRoundedCornerTextField" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="20" y="218" width="331" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="mDP-R0-mgV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="tag_003_e_396"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="السعر" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-kQ-W0N" customClass="BorderdRoundedCornerTextField" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="20" y="265" width="331" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="boq-Bm-wig"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ريال" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yr0-8g-YW5">
+                            <rect key="frame" x="321.5" y="271.5" width="24.5" height="22.5"/>
+                            <fontDescription key="fontDescription" name="BahijTheSansArabic-Plain" family="Bahij TheSansArabic" pointSize="14"/>
+                            <color key="textColor" red="0.83137254900000002" green="0.66274509800000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zcy-L2-Ccb" customClass="PlaceholderTextView" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="20" y="365" width="331" height="75"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="f4e-O2-LRd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BahijTheSansArabic-SemiLight" family="Bahij TheSansArabic" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="التفاصيل"/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-BT-c2U">
+                            <rect key="frame" x="20" y="452" width="51" height="31"/>
+                            <color key="onTintColor" red="0.83137254900000002" green="0.66274509800000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إظهار رقم الجوال في الإعلان" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-ys-h3F">
+                            <rect key="frame" x="77" y="457.5" width="154" height="20.5"/>
+                            <fontDescription key="fontDescription" name="BahijTheSansArabic-SemiLight" family="Bahij TheSansArabic" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lc-7b-Xeg" customClass="RoundedCornerButton" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="20" y="503" width="331" height="45"/>
+                            <color key="backgroundColor" red="0.83137254900000002" green="0.66274509800000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="1rO-GQ-zwn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BahijTheSansArabicSemiBold" family="Bahij TheSansArabic" pointSize="17"/>
+                            <state key="normal" title="إضافة">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didPressAdd:" destination="-1" eventType="touchUpInside" id="0TM-g6-2tT"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="المدينة" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vl-aC-Xeh" customClass="BorderdRoundedCornerTextField" customModule="Heraj_AlEbel" customModuleProvider="target">
+                            <rect key="frame" x="20" y="312" width="331" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Arc-U1-ERo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="pin_001_e_017"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NcN-ys-h3F" firstAttribute="leading" secondItem="bfN-BT-c2U" secondAttribute="trailing" constant="8" id="0Cx-ew-s1t"/>
+                        <constraint firstItem="r4Z-uk-jMz" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="1fK-da-EYS"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="r4Z-uk-jMz" secondAttribute="trailing" constant="20" id="2Ms-3D-NZ8"/>
+                        <constraint firstItem="ZGb-a7-Q7Y" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="3AR-ia-57C"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="1f9-kQ-W0N" secondAttribute="trailing" constant="20" id="418-Pr-6Us"/>
+                        <constraint firstItem="NcN-ys-h3F" firstAttribute="centerY" secondItem="bfN-BT-c2U" secondAttribute="centerY" id="8dC-Ct-2fP"/>
+                        <constraint firstAttribute="bottom" secondItem="8lc-7b-Xeg" secondAttribute="bottom" constant="20" id="ApA-kO-Q01"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="45b-Bi-ZoT" secondAttribute="trailing" constant="20" id="FWC-bJ-nVa"/>
+                        <constraint firstItem="r4Z-uk-jMz" firstAttribute="top" secondItem="45b-Bi-ZoT" secondAttribute="bottom" constant="8" id="Hao-Yf-dVi"/>
+                        <constraint firstItem="8lc-7b-Xeg" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="KII-Re-QTl"/>
+                        <constraint firstItem="8lc-7b-Xeg" firstAttribute="top" secondItem="bfN-BT-c2U" secondAttribute="bottom" constant="20" id="KhN-QL-Ttn"/>
+                        <constraint firstItem="45b-Bi-ZoT" firstAttribute="top" secondItem="URv-K4-t9i" secondAttribute="bottom" constant="8" id="LOw-4m-pUV"/>
+                        <constraint firstItem="9vl-aC-Xeh" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="LoC-cu-cfS"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="8lc-7b-Xeg" secondAttribute="trailing" constant="20" id="MkX-Mw-phw"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="8Jy-ut-8cy" secondAttribute="trailing" constant="20" id="Qfb-H4-EOS"/>
+                        <constraint firstItem="8Jy-ut-8cy" firstAttribute="top" secondItem="r4Z-uk-jMz" secondAttribute="bottom" constant="12" id="W1q-Ey-Kdd"/>
+                        <constraint firstItem="URv-K4-t9i" firstAttribute="top" secondItem="Mq1-Ke-pIc" secondAttribute="top" constant="20" id="YmL-os-Jk8"/>
+                        <constraint firstItem="ZGb-a7-Q7Y" firstAttribute="top" secondItem="r4Z-uk-jMz" secondAttribute="bottom" constant="12" id="aRo-W4-axa"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="ZGb-a7-Q7Y" secondAttribute="trailing" constant="20" id="cKh-MA-zH8"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="zcy-L2-Ccb" secondAttribute="trailing" constant="20" id="cYY-jX-YSJ"/>
+                        <constraint firstAttribute="trailing" secondItem="URv-K4-t9i" secondAttribute="trailing" constant="20" id="eY6-ow-vNz"/>
+                        <constraint firstItem="zcy-L2-Ccb" firstAttribute="top" secondItem="1f9-kQ-W0N" secondAttribute="bottom" constant="65" id="fmK-02-lWD"/>
+                        <constraint firstItem="bfN-BT-c2U" firstAttribute="top" secondItem="zcy-L2-Ccb" secondAttribute="bottom" constant="12" id="hlb-hw-3nN"/>
+                        <constraint firstItem="45b-Bi-ZoT" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="keb-Dq-5ES"/>
+                        <constraint firstItem="f7f-pd-oMx" firstAttribute="trailing" secondItem="9vl-aC-Xeh" secondAttribute="trailing" constant="20" id="oVT-Ay-OY0"/>
+                        <constraint firstItem="Yr0-8g-YW5" firstAttribute="centerY" secondItem="1f9-kQ-W0N" secondAttribute="centerY" id="p7o-v2-ork"/>
+                        <constraint firstItem="URv-K4-t9i" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="uWc-Zo-CT0"/>
+                        <constraint firstItem="9vl-aC-Xeh" firstAttribute="top" secondItem="1f9-kQ-W0N" secondAttribute="bottom" constant="12" id="ugc-MT-eB9"/>
+                        <constraint firstItem="bfN-BT-c2U" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="vQz-UA-8La"/>
+                        <constraint firstItem="8Jy-ut-8cy" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="vgv-vu-cO3"/>
+                        <constraint firstItem="NcN-ys-h3F" firstAttribute="leading" secondItem="bfN-BT-c2U" secondAttribute="trailing" constant="8" id="wEW-Nr-xUj"/>
+                        <constraint firstItem="Yr0-8g-YW5" firstAttribute="trailing" secondItem="1f9-kQ-W0N" secondAttribute="trailing" constant="-5" id="wzg-c5-oug"/>
+                        <constraint firstItem="1f9-kQ-W0N" firstAttribute="top" secondItem="ZGb-a7-Q7Y" secondAttribute="bottom" constant="12" id="xD7-bn-Z8x"/>
+                        <constraint firstItem="1f9-kQ-W0N" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="xqI-v9-iJk"/>
+                        <constraint firstItem="zcy-L2-Ccb" firstAttribute="leading" secondItem="f7f-pd-oMx" secondAttribute="leading" constant="20" id="zFT-8w-Fdc"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="f7f-pd-oMx"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="lpO-gl-R2D"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mq1-Ke-pIc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="4ov-6u-mVX"/>
+                <constraint firstItem="Mq1-Ke-pIc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="JAp-El-AiU"/>
+                <constraint firstItem="URv-K4-t9i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="JZ4-Xg-Y2T"/>
+                <constraint firstItem="Mq1-Ke-pIc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jyy-FU-hdr"/>
+                <constraint firstItem="Mq1-Ke-pIc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KxD-xU-52O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Mq1-Ke-pIc" secondAttribute="trailing" id="PBj-gI-I9A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="URv-K4-t9i" secondAttribute="trailing" constant="24" id="Vxg-5j-NFF"/>
+                <constraint firstAttribute="bottom" secondItem="Mq1-Ke-pIc" secondAttribute="bottom" id="eUl-0K-TuS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="97.767857142857139"/>
+        </view>
+        <tapGestureRecognizer id="I8B-2b-PRF">
+            <connections>
+                <action selector="PickImage:" destination="-1" id="W99-5t-uoM"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="group_5" width="12" height="12"/>
+        <image name="pin_001_e_017" width="14" height="20"/>
+        <image name="tag_003_e_396" width="27" height="16"/>
+    </resources>
+</document>

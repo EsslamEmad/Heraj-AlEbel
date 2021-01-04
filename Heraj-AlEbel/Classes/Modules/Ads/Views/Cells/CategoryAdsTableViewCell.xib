@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bahij_TheSansArabic-Plain.ttf">
+            <string>BahijTheSansArabic-Plain</string>
+        </array>
+        <array key="Bahij_TheSansArabic-SemiBold.ttf">
+            <string>BahijTheSansArabicSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="167" id="7Vf-DZ-FtJ" customClass="CategoryAdsTableViewCell" customModule="Heraj_AlEbel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Vf-DZ-FtJ" id="kOG-x6-3gr">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="166.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxq-JU-Zej">
+                        <rect key="frame" x="8" y="8" width="310" height="27"/>
+                        <fontDescription key="fontDescription" name="BahijTheSansArabicSemiBold" family="Bahij TheSansArabic" pointSize="17"/>
+                        <color key="textColor" red="0.83137254900000002" green="0.66274509800000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTC-3I-PCk" customClass="RoundedCornerButton" customModule="Heraj_AlEbel" customModuleProvider="target">
+                        <rect key="frame" x="326" y="8" width="80" height="25"/>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.66274509800000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="FbI-Ic-nFv"/>
+                            <constraint firstAttribute="width" constant="80" id="uc4-t5-8U5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BahijTheSansArabic-Plain" family="Bahij TheSansArabic" pointSize="13"/>
+                        <state key="normal" title="شاهد الكل">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="didPressOnWatchAll:" destination="7Vf-DZ-FtJ" eventType="touchUpInside" id="eTb-G0-r1L"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-m2-Lwa">
+                        <rect key="frame" x="8" y="43" width="406" height="115.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aJ2-4I-Efq">
+                            <size key="itemSize" width="80" height="80"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Boq-m2-Lwa" firstAttribute="top" secondItem="Sxq-JU-Zej" secondAttribute="bottom" constant="8" id="6uX-MF-Ear"/>
+                    <constraint firstItem="nTC-3I-PCk" firstAttribute="leading" secondItem="Sxq-JU-Zej" secondAttribute="trailing" constant="8" id="9Lq-c0-uYo"/>
+                    <constraint firstItem="Sxq-JU-Zej" firstAttribute="top" secondItem="kOG-x6-3gr" secondAttribute="top" constant="8" id="Aeg-5L-8ST"/>
+                    <constraint firstAttribute="bottom" secondItem="Boq-m2-Lwa" secondAttribute="bottom" constant="8" id="Ctx-7t-BmB"/>
+                    <constraint firstItem="Boq-m2-Lwa" firstAttribute="leading" secondItem="kOG-x6-3gr" secondAttribute="leading" constant="8" id="O0k-gV-3MA"/>
+                    <constraint firstAttribute="trailing" secondItem="nTC-3I-PCk" secondAttribute="trailing" constant="8" id="QXE-H7-YcR"/>
+                    <constraint firstItem="Sxq-JU-Zej" firstAttribute="leading" secondItem="kOG-x6-3gr" secondAttribute="leading" constant="8" id="Rue-6O-pFR"/>
+                    <constraint firstAttribute="trailing" secondItem="Boq-m2-Lwa" secondAttribute="trailing" id="bih-L3-Dea"/>
+                    <constraint firstItem="nTC-3I-PCk" firstAttribute="top" secondItem="kOG-x6-3gr" secondAttribute="top" constant="8" id="me0-A7-VtT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productsCollectionView" destination="Boq-m2-Lwa" id="fJQ-yo-Oam"/>
+                <outlet property="titleLabel" destination="Sxq-JU-Zej" id="v50-OC-onL"/>
+                <outlet property="watchAllButton" destination="nTC-3I-PCk" id="cHu-2L-AnF"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="41.183035714285715"/>
+        </tableViewCell>
+    </objects>
+</document>

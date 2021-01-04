@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bahij_TheSansArabic-Plain.ttf">
+            <string>BahijTheSansArabic-Plain</string>
+        </array>
+        <array key="Bahij_TheSansArabic-SemiBold.ttf">
+            <string>BahijTheSansArabicSemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Heraj_AlEbel" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="n77-Cd-Xnn" id="CKy-No-r0W"/>
+                <outlet property="forgotPasswordButton" destination="Mwb-Uh-805" id="H6R-YG-tMT"/>
+                <outlet property="forgotPasswordLabel" destination="ARW-eB-jtq" id="zWD-3w-F7O"/>
+                <outlet property="loginButton" destination="hxV-IT-8rG" id="8dW-Pc-B26"/>
+                <outlet property="passwordTextField" destination="bWo-3p-VBu" id="zrW-kz-yoG"/>
+                <outlet property="registerButton" destination="EGN-0y-K5F" id="WvI-uI-m4u"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6F5-nw-mF3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_1" translatesAutoresizingMaskIntoConstraints="NO" id="bM6-cg-yMo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="0.30599850171232879" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n77-Cd-Xnn" customClass="BorderdRoundedCornerTextField" customModule="Heraj_AlEbel" customModuleProvider="target">
+                    <rect key="frame" x="32" y="558" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="f7r-Sm-DRO"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="user_023_e_183"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bWo-3p-VBu" customClass="BorderdRoundedCornerTextField" customModule="Heraj_AlEbel" customModuleProvider="target">
+                    <rect key="frame" x="32" y="606" width="350" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bEZ-rH-N9o"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="lock_002_e_030"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxV-IT-8rG" customClass="RoundedCornerButton" customModule="Heraj_AlEbel" customModuleProvider="target">
+                    <rect key="frame" x="32" y="658" width="350" height="45"/>
+                    <color key="backgroundColor" red="0.83137254901960778" green="0.66274509803921566" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="75T-2F-xBD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BahijTheSansArabicSemiBold" family="Bahij TheSansArabic" pointSize="17"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="mV7-cm-9vg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGN-0y-K5F" customClass="RoundedCornerButton" customModule="Heraj_AlEbel" customModuleProvider="target">
+                    <rect key="frame" x="32" y="711" width="350" height="45"/>
+                    <color key="backgroundColor" red="0.49411764705882355" green="0.396078431372549" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="67g-mG-ovy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BahijTheSansArabicSemiBold" family="Bahij TheSansArabic" pointSize="17"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createNewAccountTapped:" destination="-1" eventType="touchUpInside" id="eJP-G2-a58"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="y0I-QP-Ywx">
+                    <rect key="frame" x="106.5" y="803" width="201.5" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هل نسيت كلمة المرور؟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARW-eB-jtq">
+                            <rect key="frame" x="0.0" y="0.0" width="133.5" height="35"/>
+                            <fontDescription key="fontDescription" name="BahijTheSansArabic-Plain" family="Bahij TheSansArabic" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwb-Uh-805">
+                            <rect key="frame" x="145.5" y="0.0" width="56" height="35"/>
+                            <fontDescription key="fontDescription" name="BahijTheSansArabic-Plain" family="Bahij TheSansArabic" pointSize="14"/>
+                            <state key="normal" title="إضغط هنا">
+                                <color key="titleColor" red="0.49411764705882355" green="0.396078431372549" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="forgotPasswordTapped:" destination="-1" eventType="touchUpInside" id="5Jr-Qn-36c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBj-kc-QLE">
+                    <rect key="frame" x="128.5" y="764" width="157" height="39"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="BahijTheSansArabic-Plain" family="Bahij TheSansArabic" pointSize="17"/>
+                    <state key="normal" title="تصفح الآن بدون تسجيل">
+                        <color key="titleColor" red="0.83137254900000002" green="0.66274509800000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressGoToMainView:" destination="-1" eventType="touchUpInside" id="9GY-73-OGG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bWo-3p-VBu" secondAttribute="trailing" constant="32" id="1BY-Ut-zQV"/>
+                <constraint firstItem="n77-Cd-Xnn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="2k3-4n-Kjh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="y0I-QP-Ywx" secondAttribute="bottom" constant="24" id="3Si-MD-Lsu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n77-Cd-Xnn" secondAttribute="trailing" constant="32" id="6hv-NF-URH"/>
+                <constraint firstItem="y0I-QP-Ywx" firstAttribute="top" secondItem="yBj-kc-QLE" secondAttribute="bottom" id="EIC-bI-xEm"/>
+                <constraint firstItem="hxV-IT-8rG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="GXG-dV-DSS"/>
+                <constraint firstItem="EGN-0y-K5F" firstAttribute="top" secondItem="hxV-IT-8rG" secondAttribute="bottom" constant="8" id="H5k-W2-Ebr"/>
+                <constraint firstItem="yBj-kc-QLE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ma3-CX-O6i"/>
+                <constraint firstItem="bM6-cg-yMo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ORh-ib-Lhz"/>
+                <constraint firstItem="bWo-3p-VBu" firstAttribute="top" secondItem="n77-Cd-Xnn" secondAttribute="bottom" constant="8" id="P0r-Wu-leK"/>
+                <constraint firstItem="hxV-IT-8rG" firstAttribute="top" secondItem="bWo-3p-VBu" secondAttribute="bottom" constant="12" id="hv6-CT-l9y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bM6-cg-yMo" secondAttribute="trailing" id="iqW-0P-19U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EGN-0y-K5F" secondAttribute="trailing" constant="32" id="jKO-9t-Syo"/>
+                <constraint firstItem="EGN-0y-K5F" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="m3H-uk-5gh"/>
+                <constraint firstItem="y0I-QP-Ywx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pgk-Y2-tkq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bM6-cg-yMo" secondAttribute="bottom" id="r5D-3B-N2R"/>
+                <constraint firstItem="yBj-kc-QLE" firstAttribute="top" secondItem="EGN-0y-K5F" secondAttribute="bottom" constant="8" id="tJo-BV-diz"/>
+                <constraint firstItem="bWo-3p-VBu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="uAU-pt-IXR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hxV-IT-8rG" secondAttribute="trailing" constant="32" id="v19-y3-KOE"/>
+                <constraint firstItem="bM6-cg-yMo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wcw-TD-u0z"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="group_1" width="187.5" height="406"/>
+        <image name="lock_002_e_030" width="6" height="7.5"/>
+        <image name="user_023_e_183" width="16" height="19"/>
+    </resources>
+</document>
